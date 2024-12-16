@@ -11,9 +11,9 @@
 .container{
     max-width: 140rem;
     margin:0 auto;
-    padding: 6rem 3rem;
+    height: 81.3vh;
+    padding: 2rem 3rem;
 }
-
 .grid_two_section{
     width: 100%;
     display: grid;
@@ -27,7 +27,7 @@
 }
 
 .movie_title {
-    margin: 3.2rem 0 3.2rem 0;
+    margin: 3.1rem 0 3.2rem 0;
 }
 
 .movie_title span{

@@ -15,7 +15,7 @@ const Movies = ({ searchParams: promiseSearchParams }) => {
   const options = {
     method: "GET",
     headers: {
-      "x-rapidapi-key": "4601465825msh51e50558eda2cc5p1e6a54jsnb0264e297892",
+      "x-rapidapi-key": "8d3995a30amsh224fdfbc143be4bp1543b8jsn5ae84b795e3f",
       "x-rapidapi-host": "netflix54.p.rapidapi.com",
     },
   };
@@ -74,31 +74,38 @@ const Movies = ({ searchParams: promiseSearchParams }) => {
           )}
         </div>
       </div>
-      <div
-        style={{ display: "flex", gap: "2rem", justifyContent: "center" }}
-        className={styles.container}
-      >
-        {currPage - 1 >= 1 && (
-          <>
-            <Link href="/movies">{"<<"}</Link>
-          </>
-        )}
-        {pageNumbers.map((ele) => (
-          <Link
-            key={ele}
-            href={`/movies?page=${ele}`}
-            className={ele === currPage ? styles.activeLink : ""}
-          >
-            {ele}
-          </Link>
-        ))}
 
-        {currPage + 1 <= totalPages && (
-          <>
-            <Link href="/movies">{">>"}</Link>
-          </>
-        )}
-      </div>
+      {data.length> 0 && (
+        <div
+          style={{
+            display: "flex",
+            gap: "2rem",
+            marginTop: "12rem",
+            justifyContent: "center",
+          }}
+        >
+          {currPage - 1 >= 1 && (
+            <>
+              <Link href="/movies">{"<<"}</Link>
+            </>
+          )}
+          {pageNumbers.map((ele) => (
+            <Link
+              key={ele}
+              href={`/movies?page=${ele}`}
+              className={ele === currPage ? styles.activeLink : ""}
+            >
+              {ele}
+            </Link>
+          ))}
+
+          {currPage + 1 <= totalPages && (
+            <>
+              <Link href="/movies">{">>"}</Link>
+            </>
+          )}
+        </div>
+      )}
     </section>
   );
 };

@@ -7,13 +7,13 @@ import Loading from "@/app/Loading";
 const page = ({ params }) => {
   const { id } = use(params);
   const [data, setData] = useState(null);
-  const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${id}=&lang=en`;
+  const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${id}&lang=en`;
   const options = {
-    method: "GET",
+    method: 'GET',
     headers: {
-      "x-rapidapi-key": "4601465825msh51e50558eda2cc5p1e6a54jsnb0264e297892",
-      "x-rapidapi-host": "netflix54.p.rapidapi.com",
-    },
+      'x-rapidapi-key': '8d3995a30amsh224fdfbc143be4bp1543b8jsn5ae84b795e3f',
+      'x-rapidapi-host': 'netflix54.p.rapidapi.com'
+    }
   };
   useEffect(() => {
     const fetchData = async () => {
@@ -47,6 +47,7 @@ const page = ({ params }) => {
               alt={data.title}
               width={600}
               height={300}
+              style={{borderRadius:'10px'}}
             />
           </div>
           <div>
