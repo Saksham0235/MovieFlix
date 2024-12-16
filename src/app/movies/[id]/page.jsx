@@ -1,11 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,use } from "react";
 import styles from "@/app/styles/common.module.css";
 import Image from "next/image";
 import Loading from "@/app/Loading";
 
-const page = ({ params }) => {
-  const id=params.id
+const Page = ({ params }) => {
+  const {id}=use(params)
   const [data, setData] = useState(null);
   const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${id}&lang=en`;
   const options = {
@@ -60,4 +60,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;
