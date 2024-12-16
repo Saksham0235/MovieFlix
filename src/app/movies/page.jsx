@@ -5,11 +5,13 @@ import MovieCard from "../components/MovieCard";
 import styles from "@/app/styles/common.module.css";
 import Loading from "../Loading";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 dotenv.config();
 
-const Movies = ({ searchParams: promiseSearchParams }) => {
-  const searchParams = use(promiseSearchParams);
+const Movies = () => {
+  const searchParams = useSearchParams();
+  
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const options = {
