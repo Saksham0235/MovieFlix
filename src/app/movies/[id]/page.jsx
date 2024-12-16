@@ -5,7 +5,7 @@ import Image from "next/image";
 import Loading from "@/app/Loading";
 
 const page = ({ params }) => {
-  const { id } = use(params);
+  const id=params.id
   const [data, setData] = useState(null);
   const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${id}&lang=en`;
   const options = {
