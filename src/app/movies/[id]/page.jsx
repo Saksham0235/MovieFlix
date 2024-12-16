@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState, use } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/app/styles/common.module.css";
 import Image from "next/image";
 import Loading from "@/app/Loading";
