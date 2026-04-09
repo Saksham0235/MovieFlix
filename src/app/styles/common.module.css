@@ -6,7 +6,10 @@
 
 .movieSection{
     background-color: #fff;
-    
+}
+.loadingState{
+    font-size: 2rem;
+    text-align: center
 }
 
 .container{
