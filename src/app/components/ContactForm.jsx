@@ -126,7 +126,7 @@ const ContactForm = () => {
           <p className={styles.success_msg}>Thank you for your message</p>
         )}
         {status === "Error" && (
-          <p className={styles.success_msg}>Error in Submitting the Form</p>
+          <p className={styles.error_msg}>Error in Submitting the Form</p>
         )}
       </div>
     </form>

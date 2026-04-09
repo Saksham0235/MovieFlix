@@ -5,8 +5,6 @@ import Link from "next/link";
 
 const MovieCard = (currele) => {
   const { id, title, synopsis, type } = currele.jawSummary;
-  console.log(currele.jawSummary, "Image Path");
-  console.log(currele.jawSummary.backgroundImage.url, "From imge url");
   return (
     <>
       <div className={styles.card} key={id}>

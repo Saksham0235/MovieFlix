@@ -78,7 +78,7 @@
 @media screen and (max-width: 1080px) {
 
     .main_header {
-        padding: 0 5rem;
+        padding: 0 2rem;
     }
 
     .mobile-navbar-btn {
@@ -132,7 +132,7 @@
         font-size: 4.2rem;
         position: absolute;
         top: 3%;
-        right: 10%;
+        right: 7%;
         color: #161617;
         z-index: 9999;
     }

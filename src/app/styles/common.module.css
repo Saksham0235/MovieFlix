@@ -5,13 +5,13 @@
 }
 
 .movieSection{
-    background-color: #fff!important;
+    background-color: #fff;
+    
 }
 
 .container{
     max-width: 140rem;
     margin:0 auto;
-    height: 100vh;
     padding: 2rem 3rem;
 }
 .grid_two_section{
@@ -23,7 +23,6 @@
 
 .movieSection h1{
     text-align: center;
-    margin-bottom: 3.2rem;
 }
 
 .movie_title {
@@ -146,6 +145,31 @@
     border-color: #e50914 transparent #e50914 transparent;
     animation: loading 1.2s infinite;
 }
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.searchicon{
+    width: 2rem;
+    position: absolute;
+    right: 5%;
+    top: 13%;
+}
+.searchContainer{
+    position: absolute;
+    right: 7%;
+    display: flex;
+    justify-content: flex-end;
+    .inputbox {
+        border-radius: 17px;
+        padding: 10px;
+        outline: none;
+        height: 30px;
+        border: 1px solid grey;
+    }
+}
 @keyframes loading {
     0% {
         transform: rotate(0);
@@ -169,6 +193,9 @@
 
     .card_section{
         justify-content: center;
+    }
+    .searchContainer{
+        display: none;
     }
 
 }

@@ -19,6 +19,7 @@ export async function POST(req,res){
     }
     catch(e)
     {
+        console.log(e,'error in contact api');
         return NextResponse.json({
             message:'Server Error, please try again !'
         },{
